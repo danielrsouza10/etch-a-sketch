@@ -19,7 +19,7 @@ const addColor = document.querySelectorAll('.box');
 addColor.forEach((box) => {
     container.addEventListener('mouseover', function (e) {
 
-        e.target.style.backgroundColor = 'pink';
+        e.target.style.backgroundColor = '#e6d7ff';
     });
 });
 
