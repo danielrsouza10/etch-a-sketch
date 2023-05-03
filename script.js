@@ -13,13 +13,21 @@ for (i = 0; i < 400; i++) {
     document.querySelector('#container').appendChild(grid);
 }
 
+//colors-table
+// const pickColor = document.querySelector('.color');
+// let colorChoice = 0;
+// pickColor.addEventListener('click', function (e) {
+//     colorChoice = e.target.innerText;
+//     console.log(colorChoice);
+// });
+
 //coloring
 const addColor = document.querySelectorAll('.box');
 
 addColor.forEach((box) => {
     container.addEventListener('mouseover', function (e) {
 
-        e.target.style.backgroundColor = '#e6d7ff';
+        e.target.style.backgroundColor = 'pink';
     });
 });
 
@@ -59,6 +67,13 @@ function createGrid(size) {
 
     }
 }
+
+// function selectColor(){
+//     const colorSelect = document.querySelectorAll('.color');
+//     let colorChoice;
+//     colorChoice = colorSelect.innerText;
+//     console.log(colorChoice);
+// }
 
 
 
