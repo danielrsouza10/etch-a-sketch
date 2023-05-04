@@ -15,12 +15,35 @@ for (i = 0; i < 400; i++) {
 
 //colors-table
 const pickColor = document.querySelector('#colors-table');
-let colorChoice = 0;
+let colorChoice = '#ff00dd';
 
+//event for selected color in the gradient color
 pickColor.addEventListener('input', function (e) {
-    colorChoice = e.target.value;
+    colorChoice = colorSelect(e.target.value);
     console.log(e.target.value);
 });
+
+//event for the rainbow button
+pickColor.addEventListener('click', function (e) {
+    colorChoice = colorSelect(e.target.value);
+    console.log(e.target.value);
+})
+
+
+
+function colorSelect(color) {
+    //if rainbow button was pressed
+    if (color === 'rainbow') {
+        colorChoice = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    //if gradient color was pressed
+    } else {
+        colorChoice = color;
+    }
+    return colorChoice;
+ 
+}
+
+
 
 //coloring
 const addColor = document.querySelectorAll('.box');
