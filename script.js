@@ -14,12 +14,13 @@ for (i = 0; i < 400; i++) {
 }
 
 //colors-table
-// const pickColor = document.querySelector('.color');
-// let colorChoice = 0;
-// pickColor.addEventListener('click', function (e) {
-//     colorChoice = e.target.innerText;
-//     console.log(colorChoice);
-// });
+const pickColor = document.querySelector('#colors-table');
+let colorChoice = 0;
+
+pickColor.addEventListener('input', function (e) {
+    colorChoice = e.target.value;
+    console.log(e.target.value);
+});
 
 //coloring
 const addColor = document.querySelectorAll('.box');
@@ -27,7 +28,7 @@ const addColor = document.querySelectorAll('.box');
 addColor.forEach((box) => {
     container.addEventListener('mouseover', function (e) {
 
-        e.target.style.backgroundColor = 'pink';
+        e.target.style.backgroundColor = colorChoice;
     });
 });
 
