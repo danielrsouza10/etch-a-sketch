@@ -1,7 +1,14 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    background-color: antiquewhite;
+    background-color: rgb(62, 34, 88);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: Sigmar;
 }
 
 #main{
@@ -9,11 +16,68 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+   
+    
+}
+
+#colors-table{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#buttons{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+}
+
+input, button{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: white;
+    color: rgb(62, 34, 88);
+    border: 2px solid black;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px 10px 4px 10px;
+        
+}
+
+span{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+#pick-a-color{
+    padding: 0px 2px 0 2px;
+    
+}
+
+#container{}
+
+input:hover{
+    background-color: rgb(62, 34, 88);
+    color: white;
+}
+
+
+
+button:hover{
+    background-color: rgb(62, 34, 88);
+    color: white;
     
 }
 
 .grid{
-    max-width: 500px;
+    max-width: 540px;
+    border: 20px solid black;
+    border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
     margin: 0;

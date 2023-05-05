@@ -6,27 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <script src="./script.js" defer></script>
-    <title>Etch-a-Sketch</title>G
+    <title>Etch-a-Sketch</title>
 </head>
 
 <body>
+    
 
     <main id="main">
-        <div id="buttons">
-            <button id="button1">20x20</button>
-            <button id="button2">50x50</button>
-            <button id="button3">100x100</button>
-
-        </div>
+        <h1>Etch-a-Sketch</h1>
 
         <div id="colors-table">
-            <input type="color" value="#ff00dd">
-            <input type="button" value="rainbow">
+            <span>Pick a color: </span><input id="pick-a-color" type="color" value="#8F00FF">
+            <input type="button" value="Rainbow">
+            <input type="button" value="Eraser">
+            
         </div>
 
 
         <div id="container">
+
+        </div>
+
+        <div id="buttons">
+            <button id="button1">20 x 20</button>
+            <button id="button2">50 x 50</button>
+            <button id="button3">100 x 100</button>
+            <button id="button4">Reset</button>
 
         </div>
 
