@@ -12,7 +12,7 @@
     
 }
 
-#container{
+.grid{
     max-width: 500px;
     display: flex;
     flex-wrap: wrap;
