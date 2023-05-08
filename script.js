@@ -33,7 +33,7 @@ pickColor.addEventListener('click', function (e) {
 //function to select a color
 function colorSelect(color) {
     //if rainbow button was pressed
-    if (color === 'Rainbow') {
+    if (color === 'Random') {
         return ("#" + Math.floor(Math.random() * 16777215).toString(16));
         //if a color was select in the gradient
     } else if (color === 'Eraser') {
